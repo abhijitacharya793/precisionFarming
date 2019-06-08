@@ -1,6 +1,8 @@
 # PRECISION FARMING
 
-![alt text](https://github.com/abhijitacharya793/precisionFarming/blob/abhijit/images/markus-spiske-603253-unsplash.jpg"Logo Title Text 1")
+
+![](images/sergio-souza-1188812-unsplash.jpg)
+
 
 #### Team :
 ###### Siddhesh Gawali
