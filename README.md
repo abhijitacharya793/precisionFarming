@@ -3,8 +3,21 @@
 
 ![](images/sergio-souza-1188812-unsplash.jpg)
 
+---
 
 #### Team :
-###### Siddhesh Gawali
-###### Abhijit Acharya
+
+|#	|Name      |
+|----| ---- |
+|1.	|Siddhesh Gawali      	|
+|2.	|Abhijit Acharya		|
+
+---
+
+### Planned Tech :
+---
+**ROS**	![](images/sergio-souza-1188812-unsplash.jpg)
+**python3**
+**dronekit**
+
 
