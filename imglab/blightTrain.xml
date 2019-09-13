@@ -1,0 +1,566 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<?xml-stylesheet type='text/xsl' href='image_metadata_stylesheet.xsl'?>
+<dataset>
+<name>imglab dataset</name>
+<comment>Created by imglab tool.</comment>
+<images>
+  <image file='blight/train/1.jpg'>
+  </image>
+  <image file='blight/train/10.jpg'>
+  </image>
+  <image file='blight/train/100.jpg'>
+  </image>
+  <image file='blight/train/101.jpg'>
+  </image>
+  <image file='blight/train/102.jpg'>
+  </image>
+  <image file='blight/train/103.jpg'>
+  </image>
+  <image file='blight/train/104.jpg'>
+  </image>
+  <image file='blight/train/105.jpg'>
+  </image>
+  <image file='blight/train/106.jpg'>
+  </image>
+  <image file='blight/train/107.jpg'>
+  </image>
+  <image file='blight/train/108.jpg'>
+  </image>
+  <image file='blight/train/109.jpg'>
+  </image>
+  <image file='blight/train/110.jpg'>
+  </image>
+  <image file='blight/train/111.jpg'>
+  </image>
+  <image file='blight/train/112.jpg'>
+  </image>
+  <image file='blight/train/113.jpg'>
+  </image>
+  <image file='blight/train/114.jpg'>
+  </image>
+  <image file='blight/train/115.jpg'>
+  </image>
+  <image file='blight/train/116.jpg'>
+  </image>
+  <image file='blight/train/117.jpg'>
+  </image>
+  <image file='blight/train/119.jpg'>
+  </image>
+  <image file='blight/train/120.jpg'>
+  </image>
+  <image file='blight/train/121.jpg'>
+  </image>
+  <image file='blight/train/122.jpg'>
+  </image>
+  <image file='blight/train/124.jpg'>
+  </image>
+  <image file='blight/train/125.jpg'>
+  </image>
+  <image file='blight/train/127.jpg'>
+  </image>
+  <image file='blight/train/128.jpg'>
+  </image>
+  <image file='blight/train/129.jpg'>
+  </image>
+  <image file='blight/train/13.jpg'>
+  </image>
+  <image file='blight/train/130.jpg'>
+  </image>
+  <image file='blight/train/131.jpg'>
+  </image>
+  <image file='blight/train/132.jpg'>
+  </image>
+  <image file='blight/train/133.jpg'>
+  </image>
+  <image file='blight/train/134.jpg'>
+  </image>
+  <image file='blight/train/135.jpg'>
+  </image>
+  <image file='blight/train/136.jpg'>
+  </image>
+  <image file='blight/train/137.jpg'>
+  </image>
+  <image file='blight/train/138.jpg'>
+  </image>
+  <image file='blight/train/139.jpg'>
+  </image>
+  <image file='blight/train/14.jpg'>
+  </image>
+  <image file='blight/train/141.jpg'>
+  </image>
+  <image file='blight/train/142.jpg'>
+  </image>
+  <image file='blight/train/143.jpg'>
+  </image>
+  <image file='blight/train/144.jpg'>
+  </image>
+  <image file='blight/train/145.jpg'>
+  </image>
+  <image file='blight/train/147.jpg'>
+  </image>
+  <image file='blight/train/148.jpg'>
+  </image>
+  <image file='blight/train/149.jpg'>
+  </image>
+  <image file='blight/train/15.jpg'>
+  </image>
+  <image file='blight/train/152.jpg'>
+  </image>
+  <image file='blight/train/153.jpg'>
+  </image>
+  <image file='blight/train/154.jpg'>
+  </image>
+  <image file='blight/train/155.jpg'>
+  </image>
+  <image file='blight/train/156.jpg'>
+  </image>
+  <image file='blight/train/157.jpg'>
+  </image>
+  <image file='blight/train/158.jpg'>
+  </image>
+  <image file='blight/train/159.jpg'>
+  </image>
+  <image file='blight/train/16.jpg'>
+  </image>
+  <image file='blight/train/160.jpg'>
+  </image>
+  <image file='blight/train/161.jpg'>
+  </image>
+  <image file='blight/train/162.jpg'>
+  </image>
+  <image file='blight/train/163.jpg'>
+  </image>
+  <image file='blight/train/164.jpg'>
+  </image>
+  <image file='blight/train/166.jpg'>
+  </image>
+  <image file='blight/train/167.jpg'>
+  </image>
+  <image file='blight/train/168.jpg'>
+  </image>
+  <image file='blight/train/169.jpg'>
+  </image>
+  <image file='blight/train/17.jpg'>
+  </image>
+  <image file='blight/train/170.jpg'>
+  </image>
+  <image file='blight/train/171.jpg'>
+  </image>
+  <image file='blight/train/172.jpg'>
+  </image>
+  <image file='blight/train/173.jpg'>
+  </image>
+  <image file='blight/train/174.jpg'>
+  </image>
+  <image file='blight/train/176.jpg'>
+  </image>
+  <image file='blight/train/177.jpg'>
+  </image>
+  <image file='blight/train/178.jpg'>
+  </image>
+  <image file='blight/train/179.jpg'>
+  </image>
+  <image file='blight/train/18.jpg'>
+  </image>
+  <image file='blight/train/180.jpg'>
+  </image>
+  <image file='blight/train/183.jpg'>
+  </image>
+  <image file='blight/train/184.jpg'>
+  </image>
+  <image file='blight/train/185.jpg'>
+  </image>
+  <image file='blight/train/186.jpg'>
+  </image>
+  <image file='blight/train/189.jpg'>
+  </image>
+  <image file='blight/train/19.jpg'>
+  </image>
+  <image file='blight/train/190.jpg'>
+  </image>
+  <image file='blight/train/191.jpg'>
+  </image>
+  <image file='blight/train/192.png'>
+  </image>
+  <image file='blight/train/194.png'>
+  </image>
+  <image file='blight/train/198.png'>
+  </image>
+  <image file='blight/train/199.png'>
+  </image>
+  <image file='blight/train/2.jpg'>
+  </image>
+  <image file='blight/train/20.jpg'>
+  </image>
+  <image file='blight/train/21.jpg'>
+  </image>
+  <image file='blight/train/212.png'>
+  </image>
+  <image file='blight/train/22.jpg'>
+  </image>
+  <image file='blight/train/23.jpg'>
+  </image>
+  <image file='blight/train/24.jpg'>
+  </image>
+  <image file='blight/train/241.png'>
+  </image>
+  <image file='blight/train/246.png'>
+  </image>
+  <image file='blight/train/25.jpg'>
+  </image>
+  <image file='blight/train/255.png'>
+  </image>
+  <image file='blight/train/259.png'>
+  </image>
+  <image file='blight/train/26.jpg'>
+  </image>
+  <image file='blight/train/268.png'>
+  </image>
+  <image file='blight/train/27.jpg'>
+  </image>
+  <image file='blight/train/274.png'>
+  </image>
+  <image file='blight/train/277.png'>
+  </image>
+  <image file='blight/train/28.jpg'>
+  </image>
+  <image file='blight/train/289.png'>
+  </image>
+  <image file='blight/train/293.png'>
+  </image>
+  <image file='blight/train/3.jpg'>
+  </image>
+  <image file='blight/train/30.jpg'>
+  </image>
+  <image file='blight/train/307.png'>
+  </image>
+  <image file='blight/train/31.jpg'>
+  </image>
+  <image file='blight/train/315.png'>
+  </image>
+  <image file='blight/train/317.png'>
+  </image>
+  <image file='blight/train/32.jpg'>
+  </image>
+  <image file='blight/train/328.png'>
+  </image>
+  <image file='blight/train/33.jpg'>
+  </image>
+  <image file='blight/train/336.png'>
+  </image>
+  <image file='blight/train/34.jpg'>
+  </image>
+  <image file='blight/train/344.png'>
+  </image>
+  <image file='blight/train/345.png'>
+  </image>
+  <image file='blight/train/35.jpg'>
+  </image>
+  <image file='blight/train/354.png'>
+  </image>
+  <image file='blight/train/357.png'>
+  </image>
+  <image file='blight/train/36.jpg'>
+  </image>
+  <image file='blight/train/363.png'>
+  </image>
+  <image file='blight/train/364.png'>
+  </image>
+  <image file='blight/train/37.jpg'>
+  </image>
+  <image file='blight/train/370.png'>
+  </image>
+  <image file='blight/train/372.png'>
+  </image>
+  <image file='blight/train/38.jpg'>
+  </image>
+  <image file='blight/train/383.png'>
+  </image>
+  <image file='blight/train/384.png'>
+  </image>
+  <image file='blight/train/385.jpg'>
+  </image>
+  <image file='blight/train/386.jpg'>
+  </image>
+  <image file='blight/train/387.jpg'>
+  </image>
+  <image file='blight/train/388.jpg'>
+  </image>
+  <image file='blight/train/389.png'>
+  </image>
+  <image file='blight/train/39.jpg'>
+  </image>
+  <image file='blight/train/390.jpg'>
+  </image>
+  <image file='blight/train/391.jpg'>
+  </image>
+  <image file='blight/train/392.jpg'>
+  </image>
+  <image file='blight/train/393.jpg'>
+  </image>
+  <image file='blight/train/394.jpg'>
+  </image>
+  <image file='blight/train/395.jpg'>
+  </image>
+  <image file='blight/train/396.jpg'>
+  </image>
+  <image file='blight/train/397.jpg'>
+  </image>
+  <image file='blight/train/398.jpg'>
+  </image>
+  <image file='blight/train/399.jpg'>
+  </image>
+  <image file='blight/train/4.jpg'>
+  </image>
+  <image file='blight/train/40.jpg'>
+  </image>
+  <image file='blight/train/400.jpg'>
+  </image>
+  <image file='blight/train/401.jpg'>
+  </image>
+  <image file='blight/train/402.jpg'>
+  </image>
+  <image file='blight/train/403.png'>
+  </image>
+  <image file='blight/train/404.jpg'>
+  </image>
+  <image file='blight/train/405.jpg'>
+  </image>
+  <image file='blight/train/406.png'>
+  </image>
+  <image file='blight/train/407.jpg'>
+  </image>
+  <image file='blight/train/408.jpg'>
+  </image>
+  <image file='blight/train/409.jpg'>
+  </image>
+  <image file='blight/train/41.jpg'>
+  </image>
+  <image file='blight/train/410.jpg'>
+  </image>
+  <image file='blight/train/411.jpg'>
+  </image>
+  <image file='blight/train/412.jpg'>
+  </image>
+  <image file='blight/train/413.jpg'>
+  </image>
+  <image file='blight/train/414.jpg'>
+  </image>
+  <image file='blight/train/415.jpg'>
+  </image>
+  <image file='blight/train/416.jpg'>
+  </image>
+  <image file='blight/train/417.jpg'>
+  </image>
+  <image file='blight/train/418.jpg'>
+  </image>
+  <image file='blight/train/419.jpg'>
+  </image>
+  <image file='blight/train/42.jpg'>
+  </image>
+  <image file='blight/train/420.jpg'>
+  </image>
+  <image file='blight/train/421.jpg'>
+  </image>
+  <image file='blight/train/422.jpg'>
+  </image>
+  <image file='blight/train/423.jpg'>
+  </image>
+  <image file='blight/train/424.jpg'>
+  </image>
+  <image file='blight/train/425.jpg'>
+  </image>
+  <image file='blight/train/426.jpg'>
+  </image>
+  <image file='blight/train/427.jpg'>
+  </image>
+  <image file='blight/train/428.png'>
+  </image>
+  <image file='blight/train/429.jpg'>
+  </image>
+  <image file='blight/train/43.jpg'>
+  </image>
+  <image file='blight/train/430.jpg'>
+  </image>
+  <image file='blight/train/431.jpg'>
+  </image>
+  <image file='blight/train/432.jpg'>
+  </image>
+  <image file='blight/train/433.jpg'>
+  </image>
+  <image file='blight/train/434.jpg'>
+  </image>
+  <image file='blight/train/435.jpg'>
+  </image>
+  <image file='blight/train/436.png'>
+  </image>
+  <image file='blight/train/437.png'>
+  </image>
+  <image file='blight/train/438.jpg'>
+  </image>
+  <image file='blight/train/439.png'>
+  </image>
+  <image file='blight/train/44.jpg'>
+  </image>
+  <image file='blight/train/440.png'>
+  </image>
+  <image file='blight/train/441.jpg'>
+  </image>
+  <image file='blight/train/442.jpg'>
+  </image>
+  <image file='blight/train/443.jpg'>
+  </image>
+  <image file='blight/train/444.png'>
+  </image>
+  <image file='blight/train/445.jpg'>
+  </image>
+  <image file='blight/train/446.jpg'>
+  </image>
+  <image file='blight/train/447.jpg'>
+  </image>
+  <image file='blight/train/448.jpg'>
+  </image>
+  <image file='blight/train/449.jpg'>
+  </image>
+  <image file='blight/train/45.jpg'>
+  </image>
+  <image file='blight/train/450.jpg'>
+  </image>
+  <image file='blight/train/451.jpg'>
+  </image>
+  <image file='blight/train/452.jpg'>
+  </image>
+  <image file='blight/train/453.jpg'>
+  </image>
+  <image file='blight/train/454.jpg'>
+  </image>
+  <image file='blight/train/455.png'>
+  </image>
+  <image file='blight/train/456.jpg'>
+  </image>
+  <image file='blight/train/457.jpg'>
+  </image>
+  <image file='blight/train/458.jpg'>
+  </image>
+  <image file='blight/train/459.jpg'>
+  </image>
+  <image file='blight/train/460.jpg'>
+  </image>
+  <image file='blight/train/461.jpg'>
+  </image>
+  <image file='blight/train/462.png'>
+  </image>
+  <image file='blight/train/463.png'>
+  </image>
+  <image file='blight/train/464.jpg'>
+  </image>
+  <image file='blight/train/465.jpg'>
+  </image>
+  <image file='blight/train/466.jpg'>
+  </image>
+  <image file='blight/train/467.jpg'>
+  </image>
+  <image file='blight/train/468.png'>
+  </image>
+  <image file='blight/train/469.jpg'>
+  </image>
+  <image file='blight/train/47.jpg'>
+  </image>
+  <image file='blight/train/470.jpg'>
+  </image>
+  <image file='blight/train/48.jpg'>
+  </image>
+  <image file='blight/train/50.jpg'>
+  </image>
+  <image file='blight/train/51.jpg'>
+  </image>
+  <image file='blight/train/52.jpg'>
+  </image>
+  <image file='blight/train/53.jpg'>
+  </image>
+  <image file='blight/train/54.jpg'>
+  </image>
+  <image file='blight/train/56.jpg'>
+  </image>
+  <image file='blight/train/57.jpg'>
+  </image>
+  <image file='blight/train/59.jpg'>
+  </image>
+  <image file='blight/train/60.jpg'>
+  </image>
+  <image file='blight/train/61.jpg'>
+  </image>
+  <image file='blight/train/62.jpg'>
+  </image>
+  <image file='blight/train/63.jpg'>
+  </image>
+  <image file='blight/train/64.jpg'>
+  </image>
+  <image file='blight/train/65.jpg'>
+  </image>
+  <image file='blight/train/66.jpg'>
+  </image>
+  <image file='blight/train/67.jpg'>
+  </image>
+  <image file='blight/train/68.jpg'>
+  </image>
+  <image file='blight/train/69.jpg'>
+  </image>
+  <image file='blight/train/7.jpg'>
+  </image>
+  <image file='blight/train/71.jpg'>
+  </image>
+  <image file='blight/train/72.jpg'>
+  </image>
+  <image file='blight/train/73.jpg'>
+  </image>
+  <image file='blight/train/74.jpg'>
+  </image>
+  <image file='blight/train/75.jpg'>
+  </image>
+  <image file='blight/train/77.jpg'>
+  </image>
+  <image file='blight/train/79.jpg'>
+  </image>
+  <image file='blight/train/8.jpg'>
+  </image>
+  <image file='blight/train/80.jpg'>
+  </image>
+  <image file='blight/train/81.jpg'>
+  </image>
+  <image file='blight/train/82.jpg'>
+  </image>
+  <image file='blight/train/83.jpg'>
+  </image>
+  <image file='blight/train/84.jpg'>
+  </image>
+  <image file='blight/train/85.jpg'>
+  </image>
+  <image file='blight/train/86.jpg'>
+  </image>
+  <image file='blight/train/87.jpg'>
+  </image>
+  <image file='blight/train/88.jpg'>
+  </image>
+  <image file='blight/train/89.jpg'>
+  </image>
+  <image file='blight/train/9.jpg'>
+  </image>
+  <image file='blight/train/90.jpg'>
+  </image>
+  <image file='blight/train/92.jpg'>
+  </image>
+  <image file='blight/train/93.jpg'>
+  </image>
+  <image file='blight/train/94.jpg'>
+  </image>
+  <image file='blight/train/95.jpg'>
+  </image>
+  <image file='blight/train/96.jpg'>
+  </image>
+  <image file='blight/train/98.jpg'>
+  </image>
+  <image file='blight/train/99.jpg'>
+  </image>
+</images>
+</dataset>
