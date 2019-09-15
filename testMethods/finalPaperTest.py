@@ -4,15 +4,12 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy import ndimage
 from sklearn import cluster
-from tkinter import *
-from tkinter.filedialog import askopenfilename
 from PIL import Image, ImageTk
-import tkinter.simpledialog
 from mpl_toolkits.mplot3d import Axes3D
 
 # im = int(input("Enter the image"))
 img = cv2.imread('392.jpg')#.format(im))
-imgOrig = img
+imgOrig = img.copy()
 img = cv2.resize(img,(300,300))
 blur = cv2.GaussianBlur(img,(5,5),0)
 
@@ -65,9 +62,10 @@ print(cluster_centers)
 print(c1)
 print(c2)
 print(c3)
+print(image_c1)
 
 plt.subplot(2,2,1)
-plt.imshow(img1)
+plt.imshow(imgOrig)
 plt.subplot(2,2,2)
 plt.imshow(image_c1*imgOrig)
 plt.subplot(2,2,3)
@@ -88,41 +86,3 @@ plt.show()
 # cv2.imshow("image",img1.astype(np.uint8))
 # cv2.waitKey(0)
 # cv2.destroyAllWindows()
-
-################################################################################
-root = Tk()
-
-#setting up a tkinter canvas
-w = Canvas(root,width=300,height=300)
-w.pack()
-img = Image.fromarray(np.concatenate((image_c1*imgOrig,image_c2*imgOrig,image_c3*imgOrig)).astype(np.uint8))
-w.create_image(0,0,image = img,anchor="nw")
-c_number = tkinter.simpledialog.askfloat("Cluster","Enter cluster number")
-print(c_number)
-#adding the image
-# original = Image.open("/home/katsuro/Documents/repo/precisionFarming/testMethods/471.jpg")
-# img = ImageTk.PhotoImage(original)
-# w.create_image(0,0,image = img,anchor="nw")
-
-# def printcoords(event):
-#     image_kmeans = (cluster_centers[cluster_labels].reshape(x,y,z)).astype(np.uint8)
-#     print("You selected this segment : {}".format(image_kmeans[event.x][event.y]))
-#
-#     for i in range(5):
-#         if int(cluster_centers[i][0])==image_kmeans[event.x][event.y][0] and int(cluster_centers[i][1])==image_kmeans[event.x][event.y][1] and int(cluster_centers[i][2])==image_kmeans[event.x][event.y][2]:
-#             pass
-#         else:
-#             cluster_centers[i] = [0,0,0]
-#     image_k = (cluster_centers[cluster_labels].reshape(x,y,z)).astype(np.uint8)
-#     cv2.imshow("image",img1.astype(np.uint8))
-#     cv2.waitKey(0)
-#     cv2.destroyAllWindows()
-#     cv2.imshow("kmeans",image_k.astype(np.uint8))
-#     cv2.waitKey(0)
-#     cv2.destroyAllWindows()
-#     # print(img1)
-#     # print(img1[event.x,event.y])
-#
-# w.bind("<Button 1>",printcoords)
-
-root.mainloop()
