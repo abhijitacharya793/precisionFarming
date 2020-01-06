@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/navigation_crop_data"
+            android:icon="@drawable/news"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/navigation_home"
+            android:icon="@drawable/home"
+            android:title="Posts" />
+
+        <item
+            android:id="@+id/navigation_search"
+            android:icon="@drawable/search"
+            android:title="Search" />
+
+        <item
+            android:id="@+id/navigation_profile"
+            android:icon="@drawable/profile_icon"
+            android:title="Profile"/>
+    </group>
+</menu>

@@ -7,11 +7,20 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.recyclerview.widget.RecyclerView
 import com.androdocs.httprequest.HttpRequest
+import com.example.phasal.Crop
 import com.example.phasal.R
+import com.example.phasal.ui.profile.CropFragment
+import com.example.phasal.ui.profile.SearchFragment
+import com.google.android.material.snackbar.Snackbar
+import kotlinx.android.synthetic.main.fragment_home.*
+import kotlinx.android.synthetic.main.home_crop_view.view.*
 import org.json.JSONArray
 import org.json.JSONObject
 
@@ -21,54 +30,112 @@ class HomeFragment : Fragment() {
     private lateinit var homeViewModel: HomeViewModel
     var weatherbar: ImageView? = null
     var temperaturebar : TextView? = null
-    var cropbar: TextView? = null
+    var listOfCrops = ArrayList<Crop>()
+    var root:View? = null
 
-        override fun onCreateView(
+    override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View?
+        {
         homeViewModel = ViewModelProviders.of(this).get(HomeViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_home, container, false)
+        root = inflater.inflate(R.layout.fragment_home, container, false)
 
         // Titlebar
-        val titlebar: TextView = root.findViewById(R.id.home_titlebar)
+        val titlebar: TextView = root!!.findViewById(R.id.home_titlebar)
         homeViewModel.title.observe(this, Observer {
             titlebar.text = it
         })
 
         // Weather and temperature
-        try
-        {
-            callAPI().execute()
-        }catch(ex:Exception){}
 
-        weatherbar = root.findViewById(R.id.weather)
+        weatherbar = root!!.findViewById(R.id.weather)
         weatherbar!!.setImageResource(R.drawable.ic_na)
 
 
-        temperaturebar = root.findViewById(R.id.temperature)
+        temperaturebar = root!!.findViewById(R.id.temperature)
         homeViewModel.temperature.observe(this, Observer {
             temperaturebar!!.text = it
         })
 
         // Place
-        val placebar: TextView = root.findViewById(R.id.place)
+        val placebar: TextView = root!!.findViewById(R.id.place)
         homeViewModel.place.observe(this, Observer {
             placebar.text = it
         })
 
         // Date
-        val datebar: TextView = root.findViewById(R.id.date)
+        val datebar: TextView = root!!.findViewById(R.id.date)
         homeViewModel.date.observe(this, Observer {
             datebar.text = it
         })
 
-        //Crop List
-//        cropbar = root.findViewById(R.id.home_crop)
+        val fab:View = root!!.findViewById(R.id.floatingActionButton)
+        fab.setOnClickListener{
+            Snackbar.make(root!!, "Camera Activity", Snackbar.LENGTH_LONG).setAction("Action", null).show()
+        }
 
+        try
+        {
+            callAPI().execute()
+        }
+        catch(ex:Exception){}
 
         return root
+    }
+
+
+    fun replaceFragment(someFragment: Fragment?)
+    {
+        val transaction: FragmentTransaction = fragmentManager!!.beginTransaction()
+        if (someFragment != null) {
+            transaction.replace(R.id.nav_host_fragment, someFragment)
+        }
+        transaction.addToBackStack(null)
+        transaction.commit()
+    }
+
+
+    inner class MainAdapter : RecyclerView.Adapter<CustomViewHolder>{
+        var listOfCrops = ArrayList<Crop>()
+
+        constructor(listOfCrops:ArrayList<Crop>):super(){
+            this.listOfCrops = listOfCrops
+        }
+
+        //number of item
+        override fun getItemCount(): Int {
+//            return videoTitles.size
+            return listOfCrops.size
+        }
+
+        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CustomViewHolder {
+            //create view
+            val layoutInflater = LayoutInflater.from(parent.context)
+            val cellForRow = layoutInflater.inflate(R.layout.home_crop_view, parent, false)
+            return CustomViewHolder(cellForRow)
+        }
+
+        override fun onBindViewHolder(holder: CustomViewHolder, position: Int) {
+            val crop= listOfCrops.get(position)
+            val cropName = crop.name
+            holder?.view?.home_crop_name.text= cropName
+            var fragment: Fragment? = null
+            holder.itemView.setOnClickListener {
+                v -> Toast.makeText(v.context, position.toString() + "", Toast.LENGTH_SHORT).show()
+                when (v.getId()) {
+                    R.id.home_crop ->  {
+                        fragment = CropFragment()
+                        replaceFragment(fragment)
+                    }
+                }
+            }
+        }
+    }
+
+    class CustomViewHolder(val view: View): RecyclerView.ViewHolder(view){
+        val crop_name= view.home_crop_name
     }
 
 //    Weather   ////////////////////////////////////////////////////////////////////////////////////
@@ -145,9 +212,10 @@ class HomeFragment : Fragment() {
                 crop = JSONObject(jsonObj[i].toString())
                 name[i] = crop.getString("name")
                 desc[i] = crop.getString("summary")
+                listOfCrops.add(Crop(name[i],desc[i]))
             }
 
-//            cropbar?.text = name[1]
+            home_crop_list_hor.adapter = MainAdapter(listOfCrops)
         }
 
         override fun onPostExecute(result: String?) {
@@ -158,9 +226,7 @@ class HomeFragment : Fragment() {
                 setCropList()
 
 
-            }catch (ex:Exception){
-                cropbar?.text = "Error"
-            }
+            }catch (ex:Exception){}
         }
 
     }

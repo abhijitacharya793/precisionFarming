@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SigninActivity"
+    android:background="#FFFFFF">
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:id="@+id/phasal_logo_si"
+        android:src="@drawable/phasal_header_white">
+    </ImageView>
+
+    <EditText
+        android:id="@+id/enter_email_si"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/phasal_logo_si"
+        android:layout_marginTop="-65dp"
+        android:background="@drawable/button_white_background"
+        android:hint="Email ..."
+        android:shadowColor="@color/colorPrimary"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:inputType="textEmailAddress">
+
+    </EditText>
+
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/enter_password_si"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/enter_email_si"
+        android:hint="Password ..."
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:textColorHint="#FFFFFF"
+        android:layout_marginTop="15dp"
+        android:shadowColor="@color/colorPrimary"
+        android:background="@drawable/button_white_background">
+    </EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:text="sign up"
+        android:background="@color/colorSecondary"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:id="@+id/sign_up_btn_si" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enter_password_si"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Sign in"
+        android:background="@color/colorSecondaryVariant"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:id="@+id/sign_in_btn_si"
+        android:shadowRadius="@android:integer/config_mediumAnimTime"
+        >
+    </Button>
+</RelativeLayout>
