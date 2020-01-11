@@ -21,15 +21,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/ic_clear_day" />
+            app:srcCompat="@drawable/ic_na" />
 
         <TextView
             android:id="@+id/temperature"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:fontFamily="@font/roboto_light"
-            android:text="28"
+            android:text="NA"
             android:textAlignment="center"
             android:textColor="@color/colorOnPrimary"
             android:textSize="96dp" />
@@ -39,7 +38,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:fontFamily="@font/roboto"
             android:text="°C"
             android:textAlignment="center"
             android:textColor="@color/colorOnPrimary"
@@ -59,7 +57,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textAlignment="center"
-            android:fontFamily="@font/roboto_medium"
             android:textColor="@color/colorOnSecondary"
             android:text="Airoli" />
 
@@ -69,7 +66,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textAlignment="center"
-            android:fontFamily="@font/roboto_medium"
             android:textColor="@color/colorOnSecondary"
             android:text="|" />
 
@@ -79,7 +75,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textAlignment="center"
-            android:fontFamily="@font/roboto_medium"
             android:textColor="@color/colorOnSecondary"
             android:text="January 6" />
     </LinearLayout>

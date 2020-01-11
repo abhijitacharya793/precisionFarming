@@ -1,54 +1,59 @@
 package com.example.phasal
 
 import android.os.Bundle
-import android.view.Menu
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
-import androidx.drawerlayout.widget.DrawerLayout
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
-import com.google.android.material.navigation.NavigationView
-
+import androidx.fragment.app.Fragment
+import com.example.phasal.Fragments.*
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var appBarConfiguration: AppBarConfiguration
+
+    internal var selectedFragment : Fragment? = null
+
+
+
+    private val onNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item->
+        when(item.itemId){
+            R.id.navigation_home->{
+            moveToFragment(homeFragment())
+                return@OnNavigationItemSelectedListener true
+            }
+            R.id.navigation_search->{
+                moveToFragment(searchFragment())
+                return@OnNavigationItemSelectedListener true
+            }
+            R.id.navigation_crop_data->{
+                moveToFragment(cropDataFragment())
+                //startActivity(Intent(this@MainActivity,AddPostActivity::class.java))
+                return@OnNavigationItemSelectedListener true
+            }
+
+            R.id.navigation_profile->{
+            moveToFragment(profileFragment())
+                return@OnNavigationItemSelectedListener true
+            }
+        }
+
+        false
+
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val toolbar: Toolbar = findViewById(R.id.toolbar)
-        setSupportActionBar(toolbar)
-        this.supportActionBar?.hide()
+        val navView:BottomNavigationView= findViewById(R.id.nav_view)
 
-        val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
-        val navView: NavigationView = findViewById(R.id.nav_view)
-        val navController = findNavController(R.id.nav_host_fragment)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        appBarConfiguration = AppBarConfiguration(
-            setOf(
-                R.id.nav_home,
-                R.id.nav_forum,
-                R.id.nav_profile
-            ), drawerLayout
-        )
-        setupActionBarWithNavController(navController, appBarConfiguration)
-        navView.setupWithNavController(navController)
+
+
+        navView.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)
+        moveToFragment(cropDataFragment())
+
+    }
+    private fun moveToFragment(fragment: Fragment){
+        val FragmentTrans = supportFragmentManager.beginTransaction()
+        FragmentTrans.replace(R.id.fragment_container,fragment)
+        FragmentTrans.commit()
     }
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.main, menu)
-        return true
-    }
-
-    override fun onSupportNavigateUp(): Boolean {
-        val navController = findNavController(R.id.nav_host_fragment)
-        return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
-    }
 }

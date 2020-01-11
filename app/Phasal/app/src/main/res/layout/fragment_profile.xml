@@ -1,47 +1,333 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.profileFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/home_sidebar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="0"
+            android:text="| | |"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/colorPrimaryVariant"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/home_titlebar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:text="@string/app_name"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/colorOnBackground"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:elevation="0dp"
+        android:background="@drawable/home_bg_weather"
+        android:id="@+id/app_bar_layout_profile_settings">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginRight="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="User Details"
+                    android:textSize="20dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/colorOnBackground"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:id="@+id/scroll_view"
+        android:layout_below="@+id/app_bar_layout_profile">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical"
+            android:id="@+id/profile_content">
 
-            <TextView
-                android:id="@+id/home_sidebar"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="16dp"
-                android:text="| | |"
-                android:fontFamily="@font/roboto_medium"
-                android:textColor="@color/colorPrimaryVariant"
-                android:layout_weight="0"
-                android:textSize="20sp" />
+                android:id="@+id/top_bar"
+                android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/home_titlebar"
-                android:layout_width="wrap_content"
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="8dp"
+                    android:id="@+id/profile_image"
+                    android:src="@drawable/profile"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:orientation="vertical" >
+
+                            <TableLayout
+                                android:id="@+id/profile_details"
+                                android:stretchColumns="*"
+                                android:layout_margin="16dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TableRow
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent"
+                                    android:layout_gravity="center">
+
+                                    <TextView
+                                        android:id="@+id/total_posts"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_column="1"
+                                        android:text="0"
+                                        android:textAlignment="center"
+                                        android:textColor="#000000"
+                                        android:fontFamily="@font/roboto"
+                                        android:textSize="24dp" />
+
+                                    <TextView
+                                        android:id="@+id/total_followers"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_column="2"
+                                        android:text="0"
+                                        android:textAlignment="center"
+                                        android:textColor="#000000"
+                                        android:fontFamily="@font/roboto"
+                                        android:textSize="24dp" />
+
+                                    <TextView
+                                        android:id="@+id/total_following"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_column="3"
+                                        android:text="0"
+                                        android:textAlignment="center"
+                                        android:textColor="#000000"
+                                        android:fontFamily="@font/roboto"
+                                        android:textSize="24dp" />
+
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="0dp"
+                                    android:layout_height="fill_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_column="1"
+                                        android:text="Posts"
+                                        android:fontFamily="roboto"
+                                        android:textAllCaps="true"
+                                        android:textAlignment="center"
+                                        android:textColor="#000000"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_column="2"
+                                        android:text="Followers"
+                                        android:fontFamily="roboto"
+                                        android:textAllCaps="true"
+                                        android:textAlignment="center"
+                                        android:textColor="#000000"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_column="3"
+                                        android:text="Following"
+                                        android:fontFamily="roboto"
+                                        android:textAllCaps="true"
+                                        android:textAlignment="center"
+                                        android:textColor="#000000"
+                                        android:textSize="10dp"/>
+
+                                </TableRow>
+                            </TableLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="visible"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="16dp"
-                android:text="Profile"
-                android:textSize="20sp"
-                android:fontFamily="@font/roboto_medium"
-                android:textColor="@color/colorOnBackground"
-                android:layout_weight="1" />
+                android:orientation="vertical"
+                android:layout_margin="16dp"
+                android:id="@+id/profile_username">
 
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="10dp"
+                    android:textAllCaps="true"
+                    android:layout_margin="8dp"
+                    android:text="Name"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="@color/colorOnBackground"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="16dp"
+                    android:layout_margin="8dp"
+                    android:id="@+id/full_name_label"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="10dp"
+                    android:layout_margin="8dp"
+                    android:textAllCaps="true"
+                    android:text="Username"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:textColor="@color/colorOnBackground"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="16dp"
+                    android:layout_margin="8dp"
+                    android:id="@+id/profile_fragment_username"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="10dp"
+                    android:layout_margin="8dp"
+                    android:textAllCaps="true"
+                    android:text="About"/>
+
+                <TextView
+                    android:id="@+id/profile_bio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About"
+                    android:layout_margin="8dp"
+                    android:textColor="@color/colorOnBackground"
+                    android:fontFamily="@font/roboto"
+                    android:textSize="16dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Profile"
+                    android:padding="8dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:layout_margin="8dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorOnPrimary"
+                    android:id="@+id/btn_edit_profile">
+
+                </Button>
+
+                <ImageButton
+                    android:id="@+id/invisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_up"
+                    android:layout_margin="8dp"
+                    android:background="#FFFFFF"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/post_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_down"
+                    android:layout_margin="8dp"
+                    android:background="#FFFFFF"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view_gallery"
+                    android:scrollbars="none"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</LinearLayout>

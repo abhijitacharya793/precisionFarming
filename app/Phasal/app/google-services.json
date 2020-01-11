@@ -15,14 +15,6 @@
       },
       "oauth_client": [
         {
-          "client_id": "376492211968-fhv301kecarjpcdn8hti32v1t9n5j8sc.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.phasal",
-            "certificate_hash": "ddf584aaef47c75ac379eeb1159b07e91cd02234"
-          }
-        },
-        {
           "client_id": "376492211968-r6es652aagqd5hcg1mi9n8sq7gco0luu.apps.googleusercontent.com",
           "client_type": 3
         }
