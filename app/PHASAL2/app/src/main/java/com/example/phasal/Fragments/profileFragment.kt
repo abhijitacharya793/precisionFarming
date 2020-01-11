@@ -7,6 +7,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
+import android.widget.ImageSwitcher
+import android.widget.LinearLayout
+import androidx.core.view.isGone
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -58,6 +63,24 @@ class profileFragment : Fragment() {
             checkFollowandFollowing()
         }
 
+        var post_view: LinearLayout = view.findViewById(R.id.post_layout)
+        var detail_view: LinearLayout = view.findViewById(R.id.profile_username)
+        var visible_btn:ImageButton = view.findViewById(R.id.visible)
+        var invisible_btn:ImageButton = view.findViewById(R.id.invisible)
+
+        post_view.visibility = View.GONE
+        detail_view.visibility = View.VISIBLE
+
+        invisible_btn.setOnClickListener{
+            post_view.visibility = View.VISIBLE
+            detail_view.visibility = View.GONE
+
+        }
+        visible_btn.setOnClickListener{
+            post_view.visibility = View.GONE
+            detail_view.visibility = View.VISIBLE
+
+        }
 
         view.btn_edit_profile.setOnClickListener {
             val getBtnText = view.btn_edit_profile.text.toString()

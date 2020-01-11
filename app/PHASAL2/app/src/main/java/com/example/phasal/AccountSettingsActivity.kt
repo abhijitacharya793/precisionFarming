@@ -60,6 +60,16 @@ class AccountSettingsActivity : AppCompatActivity() {
                 updateUserInfoOnly()
             }
         }
+
+        close_profile_btn.setOnClickListener {
+            if(check=="clicked"){
+                finish()
+
+            }else{
+                updateUserInfoOnly()
+            }
+        }
+
         profile_image_view_profile_image.setOnClickListener {
             check = "clicked"
             CropImage.activity()

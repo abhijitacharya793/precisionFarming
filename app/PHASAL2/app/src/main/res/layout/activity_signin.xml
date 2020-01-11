@@ -1,76 +1,199 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".SigninActivity"
-    android:background="#FFFFFF">
+    android:background="@color/colorBackground">
 
-
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
-        android:id="@+id/phasal_logo_si"
-        android:src="@drawable/phasal_header_white">
-    </ImageView>
-
-    <EditText
-        android:id="@+id/enter_email_si"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_below="@id/phasal_logo_si"
-        android:layout_marginTop="-65dp"
-        android:background="@drawable/button_white_background"
-        android:hint="Email ..."
-        android:shadowColor="@color/colorPrimary"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#FFFFFF"
-        android:inputType="textEmailAddress">
-
-    </EditText>
-
-    <EditText
-        android:inputType="textPassword"
-        android:id="@+id/enter_password_si"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_below="@id/enter_email_si"
-        android:hint="Password ..."
-        android:textColor="#FFFFFF"
-        android:textAlignment="center"
-        android:textColorHint="#FFFFFF"
-        android:layout_marginTop="15dp"
-        android:shadowColor="@color/colorPrimary"
-        android:background="@drawable/button_white_background">
-    </EditText>
-
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="15dp"
-        android:text="sign up"
-        android:background="@color/colorSecondary"
-        android:textColor="#FFFFFF"
-        android:textSize="20dp"
-        android:id="@+id/sign_up_btn_si" />
-    <Button
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/home_sidebar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="0"
+            android:text="| | |"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/colorPrimaryVariant"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/home_titlebar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:text="@string/app_name"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/colorOnBackground"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/home_bg_weather"
+        android:padding="34dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="Hello there,"
+            android:textColor="@color/colorOnSecondary"
+            android:textSize="34dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="welcome back"
+            android:textColor="@color/colorOnSecondary"
+            android:textSize="34dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/enter_password_si"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
-        android:text="Sign in"
-        android:background="@color/colorSecondaryVariant"
-        android:textColor="#FFFFFF"
-        android:textSize="20dp"
-        android:id="@+id/sign_in_btn_si"
-        android:shadowRadius="@android:integer/config_mediumAnimTime"
-        >
-    </Button>
-</RelativeLayout>
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="0"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:padding="8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_email"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/enter_email_si"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:fontFamily="@font/roboto"
+                android:hint="Email"
+                android:textSize="16dp"
+                android:inputType="textEmailAddress"
+                android:shadowColor="@color/colorPrimary"
+                android:textColor="@color/colorOnSecondary"
+                android:textColorHint="@color/colorOnSecondary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:padding="8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_lock"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/enter_password_si"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:fontFamily="@font/roboto"
+                android:hint="Password"
+                android:textSize="16dp"
+                android:inputType="textPassword"
+                android:shadowColor="@color/colorPrimary"
+                android:textColor="@color/colorOnSecondary"
+                android:textColorHint="@color/colorOnSecondary" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:text="Forgot your password?"
+            android:fontFamily="@font/roboto"
+            android:layout_margin="16dp"
+            android:textSize="14dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Sign in"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorOnPrimary"
+            android:textSize="14dp"
+            android:fontFamily="@font/roboto_medium"
+            android:id="@+id/sign_in_btn_si"
+            android:shadowRadius="@android:integer/config_mediumAnimTime"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:text="New here? "
+            android:fontFamily="@font/roboto"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/sign_up_btn_si"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/signup"
+            android:fontFamily="@font/roboto"
+            android:textStyle="italic"
+            android:textSize="14dp"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

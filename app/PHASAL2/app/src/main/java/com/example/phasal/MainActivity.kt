@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
                 moveToFragment(searchFragment())
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.navigation_post->{
+            R.id.navigation_crop_data->{
                 moveToFragment(cropDataFragment())
                 //startActivity(Intent(this@MainActivity,AddPostActivity::class.java))
                 return@OnNavigationItemSelectedListener true
@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
 
 
         navView.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)
-        moveToFragment(homeFragment())
+        moveToFragment(cropDataFragment())
 
     }
     private fun moveToFragment(fragment: Fragment){

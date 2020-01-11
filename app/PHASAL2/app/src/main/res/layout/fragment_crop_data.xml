@@ -29,8 +29,9 @@
                 android:layout_marginBottom="16dp"
                 android:layout_weight="0"
                 android:text="| | |"
+                android:fontFamily="@font/roboto_medium"
                 android:textColor="@color/colorPrimaryVariant"
-                android:textSize="20sp" />
+                android:textSize="20dp" />
 
             <TextView
                 android:id="@+id/home_titlebar"
@@ -42,8 +43,9 @@
                 android:layout_marginBottom="16dp"
                 android:layout_weight="1"
                 android:text="@string/app_name"
+                android:fontFamily="@font/roboto_medium"
                 android:textColor="@color/colorOnBackground"
-                android:textSize="20sp" />
+                android:textSize="20dp" />
 
         </LinearLayout>
 
@@ -90,6 +92,6 @@
         android:elevation="16dp"
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/camera" />
+        app:srcCompat="@drawable/ic_camera" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
