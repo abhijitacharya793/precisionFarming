@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/md_grey_300">
+
+    <org.horaapps.liz.ui.ThemedCardView
+        android:id="@+id/about_creator_abhijit"
+        style="@style/AboutCardStyle"
+        android:clickable="true"
+        android:layout_margin="4dp"
+        android:foreground="@drawable/ripple"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardElevation="@dimen/card_elevation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user_profile_image_search"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:srcCompat="@drawable/ic_profile"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:id="@+id/user_name_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User name"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_margin="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/colorOnBackground"/>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/post_image_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/ic_post_pic"/>
+
+            </RelativeLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/post_image_like_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        app:srcCompat="@drawable/ic_thumb_up_alt" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/likes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:layout_margin="8dp"
+                            android:textColor="@color/colorOnBackground"
+                            android:text="0"/>
+
+                        <TextView
+                            android:text="likes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="10dp"
+                            android:textStyle="bold"
+                            android:layout_margin="8dp"
+                            android:textSize="20dp"
+                            android:textColor="@color/colorOnBackground"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/ic_bookmark"/>
+
+
+                    </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/publisher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/abhijit_role"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_margin="8dp"
+                android:textColor="@color/colorOnBackground"/>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_margin="8dp"
+                android:text="@string/about_author_abhijit_description"
+                android:textColor="@color/colorOnBackground"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Comments"
+                    android:textColor="@color/md_grey_600"
+                    android:textSize="16dp"
+                    android:layout_margin="8dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/comments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_author_abhijit_description"
+                    android:textColor="@color/colorOnBackground"
+                    android:layout_margin="8dp"
+                    android:textSize="16dp" />
+
+
+        </LinearLayout>
+
+    </org.horaapps.liz.ui.ThemedCardView>
+
+</RelativeLayout>

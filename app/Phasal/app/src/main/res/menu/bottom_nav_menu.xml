@@ -1,24 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <group>
         <item
             android:id="@+id/navigation_crop_data"
             android:icon="@drawable/news"
-            android:title="Home" />
+            android:title="Home"
+            app:showAsAction="always"/>
 
         <item
-            android:id="@+id/navigation_home"
-            android:icon="@drawable/home"
-            android:title="Posts" />
+            android:id="@+id/navigation_post"
+            android:icon="@drawable/ic_chat_bubble"
+            android:title="Posts"
+            app:showAsAction="always"/>
 
         <item
             android:id="@+id/navigation_search"
             android:icon="@drawable/search"
-            android:title="Search" />
+            android:title="Search"
+            app:showAsAction="collapseActionView"/>
 
         <item
             android:id="@+id/navigation_profile"
             android:icon="@drawable/profile_icon"
-            android:title="Profile"/>
+            android:title="Profile"
+            app:showAsAction="collapseActionView"/>
+
+        <item
+            android:id="@+id/navigation_about"
+            android:icon="@drawable/ic_info"
+            android:title="About"
+            app:showAsAction="collapseActionView"/>
     </group>
 </menu>
