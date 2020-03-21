@@ -9,6 +9,7 @@ import android.text.TextUtils
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
+import com.ultimategroup.phasal.activities.WelcomeActivity
 import kotlinx.android.synthetic.main.activity_signin.*
 
 class SigninActivity : AppCompatActivity() {
@@ -47,7 +48,8 @@ class SigninActivity : AppCompatActivity() {
 
                             Toast.makeText(this, "You have signed in", Toast.LENGTH_LONG)
 
-                            val goToMain = Intent(this@SigninActivity, MainActivity::class.java)
+//                            val goToMain = Intent(this@SigninActivity, MainActivity::class.java)
+                            val goToMain = Intent(this@SigninActivity, WelcomeActivity::class.java)
                             goToMain.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
                             startActivity(goToMain)
 
@@ -76,8 +78,5 @@ class SigninActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
-
     }
-
-
 }

@@ -79,6 +79,15 @@
 
                     <org.horaapps.liz.ui.ThemedTextView
                         app:liz_color_style="text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/sub_small_spacing"
+                        android:text="@string/app_full_name"
+                        android:textSize="@dimen/medium_text" />
+
+                    <org.horaapps.liz.ui.ThemedTextView
+                        app:liz_color_style="text"
                         android:id="@+id/about_app_light_description"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -125,8 +134,6 @@
                         android:text="@string/about_support"
                         android:textSize="@dimen/medium_text"
                         android:textStyle="bold" />
-
-
 
                     <org.horaapps.liz.ui.ThemedCardView
                         android:id="@+id/about_link_github"

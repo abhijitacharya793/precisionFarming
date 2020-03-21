@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="PlaybackControlView">
-        <attr name="show_timeout"/>
-        <attr name="rewind_increment"/>
-        <attr name="fastforward_increment"/>
+        <attr name="show_timeout" />
+        <attr name="rewind_increment" />
+        <attr name="fastforward_increment" />
     </declare-styleable>
     <declare-styleable name="SettingBasic">
-        <attr name="settingIcon" format="string"/>
-        <attr name="settingTitle" format="reference"/>
-        <attr name="settingCaption" format="reference"/>
-        <attr name="settingMinApi" format="integer"/>
+        <attr name="settingIcon" format="string" />
+        <attr name="settingTitle" format="reference" />
+        <attr name="settingCaption" format="reference" />
+        <attr name="settingMinApi" format="integer" />
     </declare-styleable>
     <declare-styleable name="SettingWithSwitchView">
-        <attr name="settingIcon"/>
-        <attr name="settingTitle"/>
-        <attr name="settingCaption"/>
-        <attr name="settingMinApi"/>
-        <attr name="settingDefaultValue" format="boolean"/>
-        <attr name="settingPreferenceKey" format="reference"/>
+        <attr name="settingIcon" />
+        <attr name="settingTitle" />
+        <attr name="settingCaption" />
+        <attr name="settingMinApi" />
+        <attr name="settingDefaultValue" format="boolean" />
+        <attr name="settingPreferenceKey" format="reference" />
     </declare-styleable>
 
     <declare-styleable name="NavigationEntry">
-        <attr name="itemText" format="reference"/>
-        <attr name="itemIcon" format="string"/>
+        <attr name="itemText" format="reference" />
+        <attr name="itemIcon" format="string" />
     </declare-styleable>
 
     <declare-styleable name="AboutCreator">
@@ -37,6 +37,15 @@
         <attr name="linkIcon" format="string" />
         <attr name="linkTitle" format="string" />
         <attr name="linkDescription" format="string" />
+    </declare-styleable>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
     </declare-styleable>
 
 </resources>

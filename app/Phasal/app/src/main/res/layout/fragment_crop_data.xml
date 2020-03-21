@@ -55,7 +55,208 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="16dp"
                         android:layout_weight="0"
-                        android:text="More crops coming soon!!"/>
+                        android:textFontWeight="@integer/default_size"
+                        android:text="Schemes you cannot miss!!"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/medium_spacing"
+                    android:background="@color/md_black_1000"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/developer_profile_abhijit_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="@dimen/developer_image_margin"
+                        app:srcCompat="@drawable/soil"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/about_creator_abhijit_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Soil Health Card Scheme"
+                            android:textAllCaps="true"
+                            android:textColor="@color/accent_white"
+                            android:textSize="@dimen/medium_text" />
+
+                        <TextView
+                            android:id="@+id/about_creator_abhijit_role"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="#soil"
+                            android:textColor="@color/accent_yellow"
+                            android:textSize="@dimen/sub_medium_text" />
+
+                        <TextView
+                            android:id="@+id/about_creator_abhijit_description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Launched in 2015, the scheme has been introduced to assist State Governments to issue Soil Health Cards to all farmers in the country.  The Soil Health Cards provide information to farmers on nutrient status of their soil along with recommendation on appropriate dosage of nutrients to be applied for improving soil health and its fertility. "
+                            android:textColor="@color/accent_white"
+                            android:textSize="@dimen/sub_medium_text" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/medium_spacing"
+                    android:background="@color/md_black_1000"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/developer_profile_abhijit_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="@dimen/developer_image_margin"
+                        app:srcCompat="@drawable/crop"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/about_creator_abhijit_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pradhan Mantri Fasal Bima Yojana (PMFBY)"
+                            android:textAllCaps="true"
+                            android:textColor="@color/accent_white"
+                            android:textSize="@dimen/medium_text" />
+
+                        <TextView
+                            android:id="@+id/about_creator_abhijit_role"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="#crop"
+                            android:textColor="@color/accent_yellow"
+                            android:textSize="@dimen/sub_medium_text" />
+
+                        <TextView
+                            android:id="@+id/about_creator_abhijit_description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PMFBY is an actuarial premium based scheme under which farmer has to pay maximum premium of 2% for Kharif, 1.5% for Rabi food and oilseed crops and 5% for annual commercial/horticultural crops and remaining part of the actuarial/bidded premium is shared equally by the Centre and State Government."
+                            android:textColor="@color/accent_white"
+                            android:textSize="@dimen/sub_medium_text" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/medium_spacing"
+                    android:background="@color/md_black_1000"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/developer_profile_abhijit_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="@dimen/developer_image_margin"
+                        app:srcCompat="@drawable/soil"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/about_creator_abhijit_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Soil Health Card Scheme"
+                            android:textAllCaps="true"
+                            android:textColor="@color/accent_white"
+                            android:textSize="@dimen/medium_text" />
+
+                        <TextView
+                            android:id="@+id/about_creator_abhijit_role"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="#soil"
+                            android:textColor="@color/accent_yellow"
+                            android:textSize="@dimen/sub_medium_text" />
+
+                        <TextView
+                            android:id="@+id/about_creator_abhijit_description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Launched in 2015, the scheme has been introduced to assist State Governments to issue Soil Health Cards to all farmers in the country.  The Soil Health Cards provide information to farmers on nutrient status of their soil along with recommendation on appropriate dosage of nutrients to be applied for improving soil health and its fertility. "
+                            android:textColor="@color/accent_white"
+                            android:textSize="@dimen/sub_medium_text" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/medium_spacing"
+                    android:background="@color/md_black_1000"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/developer_profile_abhijit_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="@dimen/developer_image_margin"
+                        app:srcCompat="@drawable/soil"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/about_creator_abhijit_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Soil Health Card Scheme"
+                            android:textAllCaps="true"
+                            android:textColor="@color/accent_white"
+                            android:textSize="@dimen/medium_text" />
+
+                        <TextView
+                            android:id="@+id/about_creator_abhijit_role"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="#soil"
+                            android:textColor="@color/accent_yellow"
+                            android:textSize="@dimen/sub_medium_text" />
+
+                        <TextView
+                            android:id="@+id/about_creator_abhijit_description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Launched in 2015, the scheme has been introduced to assist State Governments to issue Soil Health Cards to all farmers in the country.  The Soil Health Cards provide information to farmers on nutrient status of their soil along with recommendation on appropriate dosage of nutrients to be applied for improving soil health and its fertility. "
+                            android:textColor="@color/accent_white"
+                            android:textSize="@dimen/sub_medium_text" />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 

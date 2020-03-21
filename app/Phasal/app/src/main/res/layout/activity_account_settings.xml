@@ -33,7 +33,7 @@
                 android:layout_height="150dp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="15dp"
-                android:src="@drawable/ic_profile"/>
+                app:srcCompat="@drawable/ic_profile"/>
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:layout_width="wrap_content"
@@ -49,7 +49,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@+id/profile_image_view_profile_image"
-                android:text="Change Profile Picture"
+                android:text="@string/change_profile_pic"
                 android:fontFamily="@font/roboto"
                 android:textColor="@color/colorOnBackground"
                 android:textSize="12dp"
@@ -70,7 +70,7 @@
                 android:fontFamily="@font/roboto"
                 android:textSize="10dp"
                 android:textAllCaps="true"
-                android:text="Name"/>
+                android:text="@string/name"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -88,7 +88,7 @@
                     android:id="@+id/enter_full_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="Name"
+                    android:hint="@string/name"
                     android:fontFamily="@font/roboto"
                     android:textSize="16dp"
                     android:layout_margin="8dp"
@@ -111,7 +111,7 @@
                 android:fontFamily="@font/roboto"
                 android:textSize="10dp"
                 android:textAllCaps="true"
-                android:text="User Name"/>
+                android:text="@string/user_name"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -129,7 +129,7 @@
                     android:id="@+id/enter_user_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="User Name"
+                    android:hint="@string/user_name"
                     android:background="@null"
                     android:layout_margin="8dp"
                     android:fontFamily="@font/roboto"
@@ -152,7 +152,7 @@
                 android:fontFamily="@font/roboto"
                 android:textSize="10dp"
                 android:textAllCaps="true"
-                android:text="About"/>
+                android:text="@string/about"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -170,7 +170,7 @@
                     android:id="@+id/enter_bio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="About"
+                    android:hint="@string/about"
                     android:layout_margin="8dp"
                     android:fontFamily="@font/roboto"
                     android:textSize="16dp"
@@ -201,7 +201,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:background="@color/colorPrimary"
-            android:text="Save"
+            android:text="@string/save"
             android:fontFamily="@font/roboto"
             android:textColor="@color/colorOnPrimary"
             android:textSize="14dp" />
@@ -220,7 +220,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:background="@color/colorPrimary"
-                android:text="Logout"
+                android:text="@string/logout"
                 android:fontFamily="@font/roboto"
                 android:textColor="@color/colorOnPrimary"
                 android:textSize="14dp" />
@@ -232,7 +232,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:background="@color/colorPrimary"
-                android:text="Delete Account"
+                android:text="@string/delete_account"
                 android:fontFamily="@font/roboto"
                 android:textColor="@color/colorOnPrimary"
                 android:textSize="14dp" />

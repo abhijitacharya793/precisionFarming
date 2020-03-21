@@ -1,5 +1,6 @@
 package com.ultimategroup.phasal
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.view.View
@@ -15,7 +16,9 @@ import com.ultimategroup.phasal.Fragments.profileFragment
 import com.ultimategroup.phasal.Fragments.searchFragment
 import com.ultimategroup.phasal.Fragments.*
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.ultimategroup.phasal.R
+import com.ultimategroup.phasal.activities.CropDiseaseActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 import kotlin.concurrent.schedule
@@ -70,6 +73,11 @@ class MainActivity : AppCompatActivity() {
 
         nav_view.replaceMenu(R.menu.bottom_nav_menu)
 
+        var captureDisease: FloatingActionButton = findViewById(R.id.fabb)
+        captureDisease.setOnClickListener{
+            moveToActivity(it)
+        }
+
         nav_view.setOnMenuItemClickListener{ menuItem ->
             when(menuItem.itemId){
                 R.id.navigation_post->{
@@ -112,5 +120,11 @@ class MainActivity : AppCompatActivity() {
         FragmentTrans.replace(R.id.fragment_container,fragment)
         FragmentTrans.commit()
     }
+
+    fun moveToActivity(view: View) {
+        val intent = Intent(this, CropDiseaseActivity::class.java).apply {}
+        startActivity(intent)
+    }
+
 
 }

@@ -1,0 +1,93 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.ultimategroup.phasal.Fragments.phasalFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:background="@color/md_green_400"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/phasal"/>
+
+        <org.horaapps.liz.ui.ThemedTextView
+            app:liz_color_style="accent"
+            android:id="@+id/about_app_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/sub_small_spacing"
+            android:text="@string/app_name"
+            android:textSize="@dimen/big_text"
+            android:textStyle="bold" />
+
+        <org.horaapps.liz.ui.ThemedTextView
+            app:liz_color_style="text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/sub_small_spacing"
+            android:text="@string/app_full_name"
+            android:textSize="@dimen/medium_text" />
+
+        <org.horaapps.liz.ui.ThemedTextView
+            app:liz_color_style="text"
+            android:id="@+id/about_app_light_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/sub_small_spacing"
+            android:text="@string/app_light_description"
+            android:textSize="@dimen/medium_text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_other" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_other" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_this" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/skip_buttonp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:text="skip>>" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

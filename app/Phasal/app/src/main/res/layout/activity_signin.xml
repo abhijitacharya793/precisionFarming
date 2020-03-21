@@ -33,7 +33,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto"
-                android:text="Hello there,"
+                android:text="@string/hello_there"
                 android:textColor="@color/colorOnSecondary"
                 android:textSize="34dp" />
 
@@ -41,7 +41,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto"
-                android:text="welcome back"
+                android:text="@string/welcome_back"
                 android:textColor="@color/colorOnSecondary"
                 android:textSize="34dp" />
 
@@ -80,7 +80,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:fontFamily="@font/roboto"
-                android:hint="Email"
+                android:hint="@string/email"
                 android:textSize="16dp"
                 android:inputType="textEmailAddress"
                 android:shadowColor="@color/colorPrimary"
@@ -107,7 +107,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
                 android:fontFamily="@font/roboto"
-                android:hint="Password"
+                android:hint="@string/password"
                 android:textSize="16dp"
                 android:inputType="textPassword"
                 android:shadowColor="@color/colorPrimary"
@@ -127,7 +127,7 @@
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:textColor="@color/colorPrimary"
-            android:text="Forgot your password?"
+            android:text="@string/forgot_your_password"
             android:fontFamily="@font/roboto"
             android:layout_margin="16dp"
             android:textSize="14dp"/>
@@ -136,7 +136,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Sign in"
+            android:text="@string/signin"
             android:background="@color/colorPrimary"
             android:textColor="@color/colorOnPrimary"
             android:textSize="14dp"
@@ -159,7 +159,7 @@
             android:textAlignment="textEnd"
             android:layout_weight="1"
             android:textColor="@color/colorPrimary"
-            android:text="New here? "
+            android:text="@string/new_here"
             android:fontFamily="@font/roboto"
             android:textSize="14dp"/>
 

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ultimategroup.phasal">
-
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ForumActivity"></activity>
+        <activity
+            android:name=".activities.WelcomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_welcome"
+            android:theme="@style/FullscreenTheme"></activity>
+        <activity android:name=".activities.CropDiseaseActivity" />
+        <activity android:name=".ForumActivity" />
         <activity android:name=".AddPostActivity" />
         <activity android:name=".SignupActivity" />
         <activity android:name=".SigninActivity">
@@ -31,9 +39,6 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <activity android:name=".about.AboutActivity">
-
-        </activity>
 
     </application>
 
